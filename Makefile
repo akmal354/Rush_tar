@@ -5,16 +5,20 @@
 ## Login   <morin_n@epitech.net>
 ## 
 ## Started on  Fri Mar  3 23:28:34 2017 
-## Last update Fri Mar  3 23:42:47 2017 
+## Last update Sat Mar  4 18:05:59 2017 
 ##
 
-CC	= gcc
+CC	= gcc -g
 
 RM	= rm -f
 
-NAME	=
+NAME	= unarchiv
 
-SRCS	=
+CFLAGS	+= -Iinclude
+CFLAGS	+= -Wall -Werror -Wextra
+
+SRCS	= ./src/untar.c \
+	./src/modif_chmod.c \
 
 OBJS	= $(SRCS:.c=.o)
 
